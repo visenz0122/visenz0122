@@ -37,6 +37,19 @@ Testing: Vitest, Playwright, API smoke testing, acceptance verification
 Workflow: Git, Docker Compose, Cursor, Claude Code, Codex
 ```
 
+## Open Source Radar
+
+Projects I am following and learning from:
+
+- [LangGraph](https://github.com/langchain-ai/langgraph): graph-based Agent orchestration and stateful workflows.
+- [Dify](https://github.com/langgenius/dify): production-ready LLM application and agentic workflow platform.
+- [OpenHands](https://github.com/OpenHands/OpenHands): AI-driven development agent and software engineering workflow.
+- [browser-use](https://github.com/browser-use/browser-use): browser automation for AI agents.
+- [Vercel AI SDK](https://github.com/vercel/ai): TypeScript toolkit for AI-powered frontend and full-stack applications.
+- [Langfuse](https://github.com/langfuse/langfuse): LLM observability, tracing, evaluation, and prompt management.
+- [Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers): MCP server ecosystem for tool and data integrations.
+- [OpenAI Agents SDK](https://github.com/openai/openai-agents-python): lightweight multi-agent workflow framework.
+
 ## What I Am Building Toward
 
 I want to become an AI application engineer who can turn LLM and Agent ideas into usable software: clear interfaces, stable state handling, observable workflows, and honest safety boundaries.
