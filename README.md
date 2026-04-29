@@ -17,12 +17,12 @@ Repository: [medical-ai-assistant-platform](https://github.com/visenz0122/medica
 
 ### OpenClaw Chat Agent Workbench
 
-Local Agent chat workbench organized for learning and secondary development.
+Local AI Agent workbench I designed and developed for streaming chat, tool-call visibility, memory, and safety middleware.
 
 - FastAPI backend with LangChain/LangGraph Agent orchestration.
 - Next.js frontend with streaming chat, session management, file/prompt editing, and tool-call visualization.
 - Memory design with JSON sessions, checkpointer, Chroma, Postgres/pgvector, and BM25 hybrid retrieval.
-- Safety and observability through Guardian middleware and optional Langfuse tracing.
+- Guardian middleware, summarization, and optional Langfuse tracing for safer and more observable Agent behavior.
 
 Repository: [openclaw-chat-agent-workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench)
 
