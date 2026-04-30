@@ -12,9 +12,9 @@ Shanghai · Frontend-first AI full-stack engineering
 
 ## Profile
 
-I am building toward an **AI application engineering** role with a frontend-first full-stack base. My strongest work is turning model or Agent behavior into product surfaces people can actually use: streaming responses, tool-call visibility, memory retrieval, async AI task state, safety boundaries, and reviewable workflows.
+I focus on **AI application engineering** with a frontend-first full-stack base. My strongest work is turning model or Agent behavior into product surfaces people can actually use: streaming responses, tool-call visibility, memory retrieval, async AI task state, safety boundaries, and reviewable workflows.
 
-I do not use low-value activity widgets here. This page is meant to show what I can explain, demo, debug, and keep improving.
+This page is a compact portfolio index for the systems I can explain, demo, debug, and keep improving.
 
 ## Selected Work
 
@@ -63,12 +63,12 @@ I do not use low-value activity widgets here. This page is meant to show what I 
 
 ## Engineering Focus
 
-| Focus | What I am trying to prove |
+| Focus | Evidence |
 | --- | --- |
-| AI product frontend | I can design dense workspaces for chat, long-running tasks, editor panels, role workflows, and streaming event feedback. |
-| Agent integration | I can connect UI state to SSE contracts, tool-call events, memory injection, safety middleware, and LangGraph runtime behavior. |
-| Full-stack coordination | I can work across REST/SSE APIs, FastAPI services, Spring Boot business logic, PostgreSQL state, and local Docker startup paths. |
-| Delivery discipline | I care about failure states, traceability, acceptance demos, readable docs, and wording that does not overclaim. |
+| AI product frontend | Dense workspaces for chat, long-running tasks, editor panels, role workflows, and streaming event feedback. |
+| Agent integration | UI state connected to SSE contracts, tool-call events, memory injection, safety middleware, and LangGraph runtime behavior. |
+| Full-stack coordination | REST/SSE APIs, FastAPI services, Spring Boot business logic, PostgreSQL state, and local Docker startup paths. |
+| Delivery discipline | Failure states, traceability, acceptance demos, readable docs, and wording that does not overclaim. |
 
 ## System Map
 
