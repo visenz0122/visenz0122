@@ -1,74 +1,102 @@
-<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Application Project Portfolio banner">
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frontend and AI Agent engineering portfolio banner">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F172A"/>
-      <stop offset="0.46" stop-color="#111827"/>
-      <stop offset="1" stop-color="#102A43"/>
+      <stop stop-color="#101723"/>
+      <stop offset="0.46" stop-color="#17202E"/>
+      <stop offset="1" stop-color="#112E2B"/>
+      <animate attributeName="x1" values="0;120;-40;0" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1280;1180;1320;1280" dur="12s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="accent" x1="170" y1="42" x2="1130" y2="318" gradientUnits="userSpaceOnUse">
+    <linearGradient id="beam" x1="116" y1="86" x2="1164" y2="274" gradientUnits="userSpaceOnUse">
       <stop stop-color="#2DD4BF"/>
-      <stop offset="0.48" stop-color="#60A5FA"/>
+      <stop offset="0.52" stop-color="#8B7CF6"/>
       <stop offset="1" stop-color="#F59E0B"/>
     </linearGradient>
+    <linearGradient id="panel" x1="68" y1="44" x2="1212" y2="316" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05"/>
+    </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#020617" flood-opacity="0.36"/>
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#020617" flood-opacity="0.38"/>
     </filter>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" stroke="#FFFFFF" stroke-opacity="0.055" stroke-width="1"/>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" stroke="#FFFFFF" stroke-opacity="0.055" stroke-width="1"/>
     </pattern>
+    <style>
+      .flow { stroke-dasharray: 18 18; animation: dash 5s linear infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; }
+      .pulse2 { animation-delay: .8s; }
+      .pulse3 { animation-delay: 1.6s; }
+      .float { animation: float 6s ease-in-out infinite; transform-origin: center; }
+      .float2 { animation-delay: 1s; }
+      .cursor { animation: blink 1s steps(2, start) infinite; }
+      @keyframes dash { to { stroke-dashoffset: -72; } }
+      @keyframes pulse { 0%, 100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      @keyframes blink { 0%, 45% { opacity: 1; } 46%, 100% { opacity: 0; } }
+    </style>
   </defs>
 
-  <rect width="1280" height="360" rx="28" fill="url(#bg)"/>
-  <rect width="1280" height="360" rx="28" fill="url(#grid)"/>
-  <path d="M86 96C214 33 340 42 464 121C600 208 721 220 846 151C960 88 1083 86 1195 137" stroke="url(#accent)" stroke-width="2.5" stroke-opacity="0.72"/>
-  <path d="M94 270C236 211 359 218 472 272C607 337 743 328 874 257C1001 188 1109 192 1190 239" stroke="url(#accent)" stroke-width="2" stroke-opacity="0.4"/>
+  <rect width="1280" height="360" rx="30" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="30" fill="url(#grid)"/>
+  <path class="flow" d="M94 88C230 38 371 46 501 128C642 217 771 225 908 154C1016 98 1110 99 1192 132" stroke="url(#beam)" stroke-width="2.4" stroke-opacity="0.65"/>
+  <path class="flow" d="M98 282C242 228 367 230 494 283C632 341 777 334 906 260C1018 196 1112 200 1190 238" stroke="url(#beam)" stroke-width="2" stroke-opacity="0.36"/>
 
   <g filter="url(#shadow)">
-    <rect x="58" y="50" width="1164" height="260" rx="22" fill="#0B1220" fill-opacity="0.82" stroke="#334155"/>
+    <rect x="54" y="42" width="1172" height="276" rx="24" fill="url(#panel)" stroke="#FFFFFF" stroke-opacity="0.16"/>
   </g>
 
-  <g transform="translate(92 82)">
-    <rect x="0" y="0" width="166" height="34" rx="17" fill="#0F766E" fill-opacity="0.18" stroke="#2DD4BF" stroke-opacity="0.55"/>
-    <text x="18" y="23" fill="#99F6E4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Portfolio / 2026</text>
+  <g transform="translate(92 72)">
+    <rect x="0" y="0" width="222" height="38" rx="19" fill="#007C73" fill-opacity="0.2" stroke="#2DD4BF" stroke-opacity="0.58"/>
+    <text x="19" y="25" fill="#BFFCF5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="1.2">FRONTEND x AGENTS</text>
 
-    <text x="0" y="88" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="0">
-      AI Application Project Portfolio
+    <text x="0" y="92" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="850" letter-spacing="0">
+      AI Application Engineering
     </text>
-    <text x="0" y="127" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="500">
-      Frontend product experience + Agent workflow integration + full-stack delivery
+    <text x="0" y="132" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="500">
+      Product UI, Agent runtime, memory, tools, safety, traces.
     </text>
 
-    <g transform="translate(0 164)">
-      <rect x="0" y="0" width="232" height="52" rx="12" fill="#111827" stroke="#1F2937"/>
-      <circle cx="28" cy="26" r="9" fill="#2DD4BF"/>
-      <text x="48" y="22" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">OpenClaw Agent</text>
-      <text x="48" y="40" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">SSE / Memory / Guardian</text>
+    <g transform="translate(0 172)">
+      <rect class="float" x="0" y="0" width="178" height="62" rx="14" fill="#0B1220" stroke="#1F2937"/>
+      <text x="20" y="26" fill="#2DD4BF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">UI SYSTEMS</text>
+      <text x="20" y="46" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">React / Vue / TS</text>
     </g>
-    <g transform="translate(252 164)">
-      <rect x="0" y="0" width="252" height="52" rx="12" fill="#111827" stroke="#1F2937"/>
-      <circle cx="28" cy="26" r="9" fill="#60A5FA"/>
-      <text x="48" y="22" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Medical AI Platform</text>
-      <text x="48" y="40" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Vue / Spring Boot / FastAPI</text>
+    <g transform="translate(194 172)">
+      <rect class="float float2" x="0" y="0" width="186" height="62" rx="14" fill="#0B1220" stroke="#1F2937"/>
+      <text x="20" y="26" fill="#A78BFA" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">AGENT RUNTIME</text>
+      <text x="20" y="46" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">LangGraph / Tools</text>
+    </g>
+    <g transform="translate(396 172)">
+      <rect class="float" x="0" y="0" width="178" height="62" rx="14" fill="#0B1220" stroke="#1F2937"/>
+      <text x="20" y="26" fill="#FDBA74" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">DELIVERY</text>
+      <text x="20" y="46" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">APIs / State / Docs</text>
     </g>
   </g>
 
-  <g transform="translate(830 78)">
-    <rect x="0" y="0" width="334" height="204" rx="18" fill="#111827" fill-opacity="0.92" stroke="#334155"/>
-    <rect x="24" y="24" width="286" height="34" rx="9" fill="#020617" stroke="#1E293B"/>
-    <circle cx="46" cy="41" r="5" fill="#22C55E"/>
-    <circle cx="66" cy="41" r="5" fill="#F59E0B"/>
-    <circle cx="86" cy="41" r="5" fill="#60A5FA"/>
-    <text x="108" y="46" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">agent-workflow.ts</text>
+  <g transform="translate(824 68)">
+    <rect x="0" y="0" width="366" height="224" rx="20" fill="#08111F" fill-opacity="0.96" stroke="#334155"/>
+    <rect x="20" y="20" width="326" height="38" rx="11" fill="#111827" stroke="#223044"/>
+    <circle cx="42" cy="39" r="5" fill="#22C55E"/>
+    <circle cx="62" cy="39" r="5" fill="#F59E0B"/>
+    <circle cx="82" cy="39" r="5" fill="#60A5FA"/>
+    <text x="106" y="44" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">agent-workflow.tsx</text>
 
-    <path d="M64 96H118" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round"/>
-    <path d="M118 96H178" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
-    <path d="M178 96H250" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="64" cy="96" r="14" fill="#0F766E" stroke="#2DD4BF"/>
-    <circle cx="118" cy="96" r="14" fill="#1D4ED8" stroke="#60A5FA"/>
-    <circle cx="178" cy="96" r="14" fill="#92400E" stroke="#F59E0B"/>
-    <circle cx="250" cy="96" r="14" fill="#334155" stroke="#94A3B8"/>
+    <g transform="translate(34 84)">
+      <path class="flow" d="M34 34H100H166H236H292" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+      <circle class="pulse" cx="34" cy="34" r="17" fill="#0F766E" stroke="#2DD4BF" stroke-width="2"/>
+      <circle class="pulse pulse2" cx="100" cy="34" r="17" fill="#4338CA" stroke="#A78BFA" stroke-width="2"/>
+      <circle class="pulse pulse3" cx="166" cy="34" r="17" fill="#92400E" stroke="#FDBA74" stroke-width="2"/>
+      <circle class="pulse pulse2" cx="236" cy="34" r="17" fill="#0F172A" stroke="#60A5FA" stroke-width="2"/>
+      <circle class="pulse" cx="292" cy="34" r="17" fill="#0F172A" stroke="#94A3B8" stroke-width="2"/>
+      <text x="9" y="80" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">UI</text>
+      <text x="76" y="80" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">SSE</text>
+      <text x="139" y="80" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">Agent</text>
+      <text x="213" y="80" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">Memory</text>
+      <text x="272" y="80" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">Trace</text>
+    </g>
 
-    <text x="40" y="146" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Build usable AI systems</text>
-    <text x="40" y="172" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">UI states, APIs, tools, memory, traces</text>
+    <text x="34" y="184" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="800">make model behavior inspectable</text>
+    <rect class="cursor" x="285" y="171" width="9" height="20" rx="2" fill="#2DD4BF"/>
   </g>
 </svg>
