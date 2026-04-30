@@ -1,22 +1,22 @@
 <div align="center">
 
-<img src="./assets/portfolio-banner.svg" alt="Frontend and AI Agent engineering portfolio banner" width="100%" />
+<img src="./assets/portfolio-banner.svg" alt="visenz0122 - AI Agent application engineering profile" width="100%" />
 
 <br />
 
-[![GitHub](https://img.shields.io/badge/GitHub-visenz0122-181717?style=for-the-badge&logo=github)](https://github.com/visenz0122)
-[![Email](https://img.shields.io/badge/Email-wxzhang0122%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wxzhang0122@gmail.com)
-[![Focus](https://img.shields.io/badge/Focus-Frontend%20x%20AI%20Agents-007C73?style=for-the-badge)](#engineering-signal)
+<a href="https://github.com/visenz0122">GitHub</a> ·
+<a href="mailto:wxzhang0122@gmail.com">wxzhang0122@gmail.com</a> ·
+Shanghai · Frontend-first AI full-stack engineering
 
 </div>
 
-## What This Profile Is
+## Profile
 
-I use this page as a compact portfolio for **AI application engineering**: frontend product experience, Agent workflow integration, streaming interfaces, memory/RAG systems, and full-stack delivery.
+I am building toward an **AI application engineering** role with a frontend-first full-stack base. My strongest work is turning model or Agent behavior into product surfaces people can actually use: streaming responses, tool-call visibility, memory retrieval, async AI task state, safety boundaries, and reviewable workflows.
 
-Instead of showing low-value GitHub activity widgets, this profile focuses on the systems I can actually explain, demo, and improve.
+I do not use low-value activity widgets here. This page is meant to show what I can explain, demo, debug, and keep improving.
 
-## Featured Systems
+## Selected Work
 
 <table>
   <tr>
@@ -25,82 +25,89 @@ Instead of showing low-value GitHub activity widgets, this profile focuses on th
         <a href="https://github.com/visenz0122/openclaw-chat-agent-workbench">OpenClaw Chat Agent Workbench</a>
       </h3>
       <p>
-        A local-first Agent workbench for streaming chat, tool orchestration, structured memory, Guardian safety checks, and LangGraph-based runtime control.
+        <strong>Personal AI Agent workbench.</strong> I built this as a local-first system for streaming chat, tool orchestration, structured memory, safety checks, and traceable Agent runtime behavior.
       </p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-111827?style=flat-square&logo=nextdotjs&logoColor=white" />
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-        <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square" />
-        <img src="https://img.shields.io/badge/SSE-6554C0?style=flat-square" />
-      </p>
+      <p><strong>What it demonstrates</strong></p>
       <ul>
-        <li>Streaming chat UI with token and tool-call event rendering</li>
-        <li>LangChain/LangGraph Agent runtime with middleware hooks</li>
-        <li>Memory v1/v2 design with vector, keyword, and hybrid retrieval</li>
-        <li>Inspector-style workspace for prompts, skills, memory, and runtime files</li>
+        <li>Next.js workspace for chat, sessions, runtime config, file editing, and event inspection.</li>
+        <li>FastAPI SSE path from user message to LangChain/LangGraph Agent execution.</li>
+        <li>Memory v1/v2 with JSON sessions, Chroma/vector search, PostgreSQL + pgvector, BM25, and hybrid retrieval.</li>
+        <li>Guardian middleware and optional Langfuse tracing for safer, observable Agent behavior.</li>
       </ul>
+      <p>
+        <code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>FastAPI</code>
+        <code>LangGraph</code> <code>LangChain</code> <code>PostgreSQL</code> <code>pgvector</code>
+      </p>
     </td>
     <td width="50%" valign="top">
       <h3>
         <a href="https://github.com/visenz0122/medical-ai-assistant-platform">Medical AI Assistant Platform</a>
       </h3>
       <p>
-        A full-stack medical imaging workflow project with AI-assisted inference, role-based pages, research feedback, audit records, and Agent collaboration.
+        <strong>Course/team full-stack AI workflow project.</strong> The public positioning is intentionally honest: my strongest angle is frontend-heavy integration and AI application delivery.
       </p>
-      <p>
-        <img src="https://img.shields.io/badge/Vue%203-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" />
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-      </p>
+      <p><strong>What it demonstrates</strong></p>
       <ul>
-        <li>Frontend-heavy role workflows for doctors, researchers, and admins</li>
-        <li>Async AI inference states, result review, and failure recovery UI</li>
-        <li>Spring Boot, FastAPI, PostgreSQL, and Agent-service integration</li>
-        <li>Acceptance docs, demo paths, and verification material organization</li>
+        <li>Vue 3 role workflows for doctors, researchers, admins, and Agent-assisted operations.</li>
+        <li>Async pneumonia inference task states, result review, feedback, and failure recovery UI.</li>
+        <li>Integration across Spring Boot business APIs, FastAPI CV inference, FastAPI Agent service, and PostgreSQL.</li>
+        <li>Acceptance docs, demo routes, testing notes, and release-readiness material organization.</li>
       </ul>
+      <p>
+        <code>Vue 3</code> <code>TypeScript</code> <code>Spring Boot</code> <code>FastAPI</code>
+        <code>PostgreSQL</code> <code>LangGraph</code> <code>Docker</code> <code>Playwright</code>
+      </p>
     </td>
   </tr>
 </table>
 
-## Engineering Signal
+## Engineering Focus
 
-| Area | What I Try To Show |
+| Focus | What I am trying to prove |
 | --- | --- |
-| Product-grade frontend | Dense but readable workspaces, responsive state, streaming UI, editor panels, role-based workflows, and interaction details that survive real demos. |
-| Agent application engineering | Tool calling, SSE event contracts, memory/RAG injection, LangGraph workflow control, prompt/context handling, and human-in-the-loop boundaries. |
-| Full-stack delivery | REST/SSE integration, auth/RBAC coordination, PostgreSQL-backed state, FastAPI services, Docker/local startup paths, and practical debugging. |
-| Reliability mindset | Async task states, failure recovery, trace visibility, safety middleware, testable interfaces, and honest project documentation. |
+| AI product frontend | I can design dense workspaces for chat, long-running tasks, editor panels, role workflows, and streaming event feedback. |
+| Agent integration | I can connect UI state to SSE contracts, tool-call events, memory injection, safety middleware, and LangGraph runtime behavior. |
+| Full-stack coordination | I can work across REST/SSE APIs, FastAPI services, Spring Boot business logic, PostgreSQL state, and local Docker startup paths. |
+| Delivery discipline | I care about failure states, traceability, acceptance demos, readable docs, and wording that does not overclaim. |
 
-## System Pipeline
+## System Map
 
-<img src="./assets/system-pipeline.svg" alt="Animated frontend to agent system pipeline" width="100%" />
+```text
+OpenClaw
+  user message -> SSE stream -> Agent runtime -> tools / memory / safety -> inspectable UI
 
-## Core Stack
+Medical AI platform
+  image case -> async inference task -> result state -> feedback / research / audit -> Agent HITL
+```
+
+## Stack I Can Discuss
 
 <p>
-  <img src="https://img.shields.io/badge/Frontend-React%20%7C%20Vue%20%7C%20TypeScript-17202E?style=flat-square" />
-  <img src="https://img.shields.io/badge/UI-Next.js%20%7C%20Tailwind%20%7C%20Element%20Plus-007C73?style=flat-square" />
-  <img src="https://img.shields.io/badge/Agent-LangGraph%20%7C%20LangChain%20%7C%20MCP-6554C0?style=flat-square" />
-  <img src="https://img.shields.io/badge/Backend-FastAPI%20%7C%20Spring%20Boot-C94F3D?style=flat-square" />
-  <img src="https://img.shields.io/badge/Data-PostgreSQL%20%7C%20pgvector%20%7C%20Chroma-B77912?style=flat-square" />
-  <img src="https://img.shields.io/badge/Quality-Playwright%20%7C%20Vitest%20%7C%20Docs-111827?style=flat-square" />
+  <code>TypeScript</code>
+  <code>React</code>
+  <code>Next.js</code>
+  <code>Vue 3</code>
+  <code>Tailwind CSS</code>
+  <code>Element Plus</code>
+  <code>FastAPI</code>
+  <code>Spring Boot</code>
+  <code>PostgreSQL</code>
+  <code>pgvector</code>
+  <code>LangGraph</code>
+  <code>LangChain</code>
+  <code>SSE</code>
+  <code>RAG</code>
+  <code>Docker</code>
+  <code>Playwright</code>
 </p>
 
-## What I Am Sharpening
+## Open Source Systems I Study
 
-- Turning AI demos into usable product workflows with clear state, recovery, and traceability.
-- Building frontend surfaces for long-running Agent tasks, tool calls, streaming output, and memory inspection.
-- Studying open-source Agent systems so my own projects stay close to real engineering practice.
-
-## Open Source Radar
-
-| Project | Why I Follow It |
+| System | Why it matters to my direction |
 | --- | --- |
-| [LangGraph](https://github.com/langchain-ai/langgraph) | Stateful Agent orchestration and graph-based workflow control. |
-| [Dify](https://github.com/langgenius/dify) | Production-style LLM application and workflow platform design. |
-| [OpenHands](https://github.com/OpenHands/OpenHands) | AI software engineering agent patterns and developer-agent UX. |
+| [LangGraph](https://github.com/langchain-ai/langgraph) | Stateful Agent workflows and controllable execution graphs. |
+| [Dify](https://github.com/langgenius/dify) | Production-style LLM workflow and application platform design. |
+| [OpenHands](https://github.com/OpenHands/OpenHands) | Developer-agent UX and software engineering Agent patterns. |
 | [browser-use](https://github.com/browser-use/browser-use) | Browser automation as an Agent capability. |
-| [Vercel AI SDK](https://github.com/vercel/ai) | TypeScript-first AI application development patterns. |
-| [Langfuse](https://github.com/langfuse/langfuse) | LLM tracing, evaluation, and prompt observability. |
-| [Model Context Protocol](https://github.com/modelcontextprotocol) | Tool and data integration standards for Agent applications. |
+| [Vercel AI SDK](https://github.com/vercel/ai) | TypeScript-first streaming AI application patterns. |
+| [Langfuse](https://github.com/langfuse/langfuse) | LLM tracing, prompt observability, and evaluation workflows. |
