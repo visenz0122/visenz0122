@@ -1,40 +1,76 @@
-# Hi, I am Zhang Wenxuan
+<div align="center">
 
-Software Engineering student at East China Normal University. I am focusing on frontend-heavy AI applications: Vue/React interfaces, async state, API integration, Agent workflows, and human-in-the-loop product experiences.
+# Zhang Wenxuan
 
-## Featured Projects
+Software Engineering @ East China Normal University  
+Frontend-heavy AI Application Developer | Agent Workflow | Full-stack Integration
 
-### Medical AI Assistant Platform
+[![GitHub](https://img.shields.io/badge/GitHub-visenz0122-181717?style=flat-square&logo=github)](https://github.com/visenz0122)
+[![Email](https://img.shields.io/badge/Email-10235101523%40stu.ecnu.edu.cn-0A66C2?style=flat-square&logo=gmail&logoColor=white)](mailto:10235101523@stu.ecnu.edu.cn)
+[![Focus](https://img.shields.io/badge/Focus-AI%20Application%20Engineering-7C3AED?style=flat-square)](#current-focus)
 
-Full-stack teaching prototype for medical image management, AI-assisted pneumonia screening, research feedback, audit trails, and Agent collaboration.
+</div>
 
-- Vue 3 + TypeScript + Pinia + Element Plus frontend.
-- Spring Boot + PostgreSQL backend for RBAC, cases, images, inference records, feedback, and audit logs.
-- FastAPI + PyTorch CV service and FastAPI + LangGraph Agent service.
-- My focus: frontend workflow delivery, async AI task states, API integration, Agent interaction pages, and acceptance verification.
+## Current Focus
 
-Repository: [medical-ai-assistant-platform](https://github.com/visenz0122/medical-ai-assistant-platform)
-
-### OpenClaw Chat Agent Workbench
-
-Local AI Agent workbench I designed and developed for streaming chat, tool-call visibility, memory, and safety middleware.
-
-- FastAPI backend with LangChain/LangGraph Agent orchestration.
-- Next.js frontend with streaming chat, session management, file/prompt editing, and tool-call visualization.
-- Memory design with JSON sessions, checkpointer, Chroma, Postgres/pgvector, and BM25 hybrid retrieval.
-- Guardian middleware, summarization, and optional Langfuse tracing for safer and more observable Agent behavior.
-
-Repository: [openclaw-chat-agent-workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench)
-
-## Stack
+I am building toward an AI application engineering role: turning LLM and Agent ideas into usable software with clear interfaces, reliable async state, observable workflows, and human-in-the-loop safety boundaries.
 
 ```text
-Frontend: Vue 3, React, TypeScript, Vite, Next.js, Pinia, Vue Router, Element Plus, Tailwind CSS
-Backend: Java, Spring Boot, Python, FastAPI, REST, SSE, JWT, RBAC
-AI Apps: LangGraph, LangChain, RAG, tool calling, HITL, prompt/context engineering
-Data: PostgreSQL, pgvector, BM25, SQL, audit logs
-Testing: Vitest, Playwright, API smoke testing, acceptance verification
-Workflow: Git, Docker Compose, Cursor, Claude Code, Codex
+AI Application Engineering
+  -> Frontend product experience
+  -> Agent workflow integration
+  -> Async task state and streaming UI
+  -> Backend/API collaboration
+  -> Evaluation, tracing, and safety boundaries
+```
+
+## Featured Work
+
+| Project | What It Shows | Stack |
+| --- | --- | --- |
+| [OpenClaw Chat Agent Workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench) | Local AI Agent workbench with SSE chat, tool-call visibility, memory modules, Guardian safety middleware, and LangGraph orchestration. | FastAPI, Next.js, TypeScript, LangChain, LangGraph, PostgreSQL, pgvector, BM25 |
+| [Medical AI Assistant Platform](https://github.com/visenz0122/medical-ai-assistant-platform) | Full-stack medical imaging platform with AI-assisted inference, role-based workflows, research feedback, audit trails, and Agent collaboration. | Vue 3, TypeScript, Spring Boot, FastAPI, PyTorch, LangGraph, PostgreSQL, Docker Compose |
+
+## Engineering Strengths
+
+- Frontend workflow delivery with Vue 3, React, TypeScript, Vite, Next.js, Pinia, Vue Router, Element Plus, and Tailwind CSS.
+- AI application integration with LangGraph, LangChain, RAG, tool calling, HITL confirmation, SSE streaming, prompt/context engineering, and memory design.
+- Full-stack collaboration with Spring Boot, FastAPI, PostgreSQL, JWT/RBAC, REST APIs, Docker Compose, and local service orchestration.
+- Product-minded implementation: async task states, error recovery, role-based pages, acceptance verification, and interview-ready documentation.
+
+## Tech Stack
+
+<p>
+  <img src="https://img.shields.io/badge/Vue%203-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square" />
+  <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square" />
+  <img src="https://img.shields.io/badge/MCP-111827?style=flat-square" />
+</p>
+
+## Project Map
+
+```text
+openclaw-chat-agent-workbench
+  FastAPI backend
+  Next.js frontend
+  LangGraph Agent runtime
+  SSE chat and tool event stream
+  Memory v1/v2 and Guardian middleware
+
+medical-ai-assistant-platform
+  Vue 3 role-based frontend
+  Spring Boot business backend
+  FastAPI CV inference service
+  LangGraph Agent service
+  PostgreSQL and Docker Compose
 ```
 
 ## Open Source Radar
@@ -50,11 +86,18 @@ Projects I am following and learning from:
 - [Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers): MCP server ecosystem for tool and data integrations.
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python): lightweight multi-agent workflow framework.
 
-## What I Am Building Toward
+## Learning Loop
 
-I want to become an AI application engineer who can turn LLM and Agent ideas into usable software: clear interfaces, stable state handling, observable workflows, and honest safety boundaries.
+```text
+Read a real project
+  -> trace the main workflow
+  -> implement one focused improvement
+  -> verify with tests or browser checks
+  -> package the result into README / resume / interview notes
+```
 
-## Contact
+<div align="center">
 
-- GitHub: [visenz0122](https://github.com/visenz0122)
-- Email: 10235101523@stu.ecnu.edu.cn
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=visenz0122&show_icons=true&theme=transparent&hide_border=true)
+
+</div>
