@@ -1,11 +1,11 @@
 <div align="center">
 
-# AI Application Project Portfolio
+<img src="./assets/portfolio-banner.svg" alt="AI Application Project Portfolio" width="100%" />
 
-Frontend-heavy software engineer focused on AI applications, Agent workflows, and full-stack product delivery.
+<br />
 
 [![GitHub](https://img.shields.io/badge/GitHub-visenz0122-181717?style=for-the-badge&logo=github)](https://github.com/visenz0122)
-[![Email](https://img.shields.io/badge/Email-10235101523%40stu.ecnu.edu.cn-0A66C2?style=for-the-badge&logo=gmail&logoColor=white)](mailto:10235101523@stu.ecnu.edu.cn)
+[![Email](https://img.shields.io/badge/Email-wxzhang0122%40gmail.com-0A66C2?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wxzhang0122@gmail.com)
 [![Focus](https://img.shields.io/badge/Focus-AI%20Application%20Engineering-7C3AED?style=for-the-badge)](#engineering-profile)
 
 </div>
