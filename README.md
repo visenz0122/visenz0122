@@ -1,22 +1,26 @@
 <div align="center">
 
-<img src="./assets/portfolio-banner.svg" alt="visenz0122 - AI Agent application engineering profile" width="100%" />
+<img src="./assets/portfolio-banner.svg" alt="visenz0122 - AI application engineering and Codex tooling profile" width="100%" />
 
 <br />
 
 <a href="https://github.com/visenz0122">GitHub</a> ·
 <a href="mailto:wxzhang0122@gmail.com">wxzhang0122@gmail.com</a> ·
-Shanghai · Frontend-first AI full-stack engineering
+Shanghai · AI application engineering · Codex tooling
 
 </div>
 
-## Profile
+## Portfolio Map
 
-I focus on **AI application engineering** with a frontend-first full-stack base. My strongest work is turning model or Agent behavior into product surfaces people can actually use: streaming responses, tool-call visibility, memory retrieval, async AI task state, safety boundaries, and reviewable workflows.
+I focus on **AI application engineering** with a frontend-first full-stack base. The projects below are organized by what they prove, not by raw activity numbers.
 
-This page is a compact portfolio index for the systems I can explain, demo, debug, and keep improving.
+| Lane | Public artifact | Engineering signal |
+| --- | --- | --- |
+| Agent workbench | [OpenClaw Chat Agent Workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench) | Streaming Agent UI, tool-call visibility, memory retrieval, safety middleware, traceable runtime behavior. |
+| Applied AI workflow | [Medical AI Assistant Platform](https://github.com/visenz0122/medical-ai-assistant-platform) | Role-based Vue workflows, async inference state, Spring Boot/FastAPI integration, PostgreSQL-backed records. |
+| Developer tooling | [spec-test.skill](https://github.com/visenz0122/spec-test.skill) | Skill design, specification-based testing, browser/Playwright evidence, reusable QA workflow templates. |
 
-## Selected Work
+## Main Case Studies
 
 <table>
   <tr>
@@ -25,14 +29,14 @@ This page is a compact portfolio index for the systems I can explain, demo, debu
         <a href="https://github.com/visenz0122/openclaw-chat-agent-workbench">OpenClaw Chat Agent Workbench</a>
       </h3>
       <p>
-        <strong>Personal AI Agent workbench.</strong> I built this as a local-first system for streaming chat, tool orchestration, structured memory, safety checks, and traceable Agent runtime behavior.
+        <strong>Personal AI Agent workbench.</strong> I built this as a local-first system for streaming chat, tool orchestration, structured memory, safety checks, and observable Agent execution.
       </p>
       <p><strong>What it demonstrates</strong></p>
       <ul>
-        <li>Next.js workspace for chat, sessions, runtime config, file editing, and event inspection.</li>
+        <li>Next.js workspace for chat, session switching, runtime config, file editing, and event inspection.</li>
         <li>FastAPI SSE path from user message to LangChain/LangGraph Agent execution.</li>
         <li>Memory v1/v2 with JSON sessions, Chroma/vector search, PostgreSQL + pgvector, BM25, and hybrid retrieval.</li>
-        <li>Guardian middleware and optional Langfuse tracing for safer, observable Agent behavior.</li>
+        <li>Guardian middleware and optional Langfuse tracing for safer, inspectable Agent behavior.</li>
       </ul>
       <p>
         <code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>FastAPI</code>
@@ -61,47 +65,39 @@ This page is a compact portfolio index for the systems I can explain, demo, debu
   </tr>
 </table>
 
-## Engineering Focus
+## Developer Tooling
 
-| Focus | Evidence |
+### [spec-test.skill](https://github.com/visenz0122/spec-test.skill)
+
+`spec-test.skill` is my public skill project for agent-assisted web testing. It turns vague "test this feature" requests into structured specifications, test cases, execution evidence, and reviewable QA reports.
+
+| Area | What it contains |
 | --- | --- |
-| AI product frontend | Dense workspaces for chat, long-running tasks, editor panels, role workflows, and streaming event feedback. |
-| Agent integration | UI state connected to SSE contracts, tool-call events, memory injection, safety middleware, and LangGraph runtime behavior. |
-| Full-stack coordination | REST/SSE APIs, FastAPI services, Spring Boot business logic, PostgreSQL state, and local Docker startup paths. |
-| Delivery discipline | Failure states, traceability, acceptance demos, readable docs, and wording that does not overclaim. |
+| Spec workflow | Cartographer, Inspector, and Operator roles with human review gates. |
+| Test design | Boundary value, equivalence partitioning, decision table, state transition, use case, and Right-BICEP references. |
+| Execution discipline | Playwright plus browser/screenshot evidence for data, workflow, and visual checks. |
+| Reusable artifacts | Chinese and English editions, templates, examples, execution reports, and review checklists. |
 
-## System Map
+## Engineering Signals
 
-```text
-OpenClaw
-  user message -> SSE stream -> Agent runtime -> tools / memory / safety -> inspectable UI
+| Signal | Evidence across the projects |
+| --- | --- |
+| Product-grade AI frontend | Streaming chat surfaces, long-running task states, role workflows, editor panels, result review, and event feedback. |
+| Agent integration | SSE contracts, tool-call rendering, memory/RAG injection, LangGraph runtime control, Guardian checks, and tracing. |
+| Full-stack coordination | REST/SSE APIs, FastAPI services, Spring Boot business logic, PostgreSQL records, Docker/local startup paths. |
+| Testing and delivery | Specification-based testing, browser evidence, Playwright thinking, acceptance docs, and honest public wording. |
 
-Medical AI platform
-  image case -> async inference task -> result state -> feedback / research / audit -> Agent HITL
-```
+## Stack
 
-## Stack I Can Discuss
+| Layer | Tools I can discuss from real project work |
+| --- | --- |
+| Frontend surfaces | TypeScript, React, Next.js, Vue 3, Tailwind CSS, Element Plus, Monaco-style editor/workspace patterns. |
+| Agent / AI application | LangGraph, LangChain, SSE streaming, tool calls, memory retrieval, RAG, safety middleware, Langfuse-style tracing. |
+| Backend / data | FastAPI, Spring Boot, PostgreSQL, pgvector, Chroma, Docker Compose, auth/RBAC integration. |
+| QA / developer tools | Skill authoring, specification-based testing, browser automation, Playwright, screenshot evidence, test report templates. |
 
-<p>
-  <code>TypeScript</code>
-  <code>React</code>
-  <code>Next.js</code>
-  <code>Vue 3</code>
-  <code>Tailwind CSS</code>
-  <code>Element Plus</code>
-  <code>FastAPI</code>
-  <code>Spring Boot</code>
-  <code>PostgreSQL</code>
-  <code>pgvector</code>
-  <code>LangGraph</code>
-  <code>LangChain</code>
-  <code>SSE</code>
-  <code>RAG</code>
-  <code>Docker</code>
-  <code>Playwright</code>
-</p>
-
-## Open Source Systems I Study
+<details>
+<summary>Open source systems I study</summary>
 
 | System | Why it matters to my direction |
 | --- | --- |
@@ -111,3 +107,5 @@ Medical AI platform
 | [browser-use](https://github.com/browser-use/browser-use) | Browser automation as an Agent capability. |
 | [Vercel AI SDK](https://github.com/vercel/ai) | TypeScript-first streaming AI application patterns. |
 | [Langfuse](https://github.com/langfuse/langfuse) | LLM tracing, prompt observability, and evaluation workflows. |
+
+</details>
