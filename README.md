@@ -21,9 +21,9 @@ The projects below are organized by what I am practicing now: AI video productio
 | Area | What I am studying and making | Public artifact |
 | --- | --- | --- |
 | AI video production systems | Edit-first generation flow, storyboard-to-video workflow, async task states, worker/runtime boundaries, and AI provider integration. | [waoowaoo Personal Fork](https://github.com/visenz0122/waoowaoo) |
-| Agent application engineering | Streaming Agent UI, tool-call visibility, memory/RAG, safety checks, and observable execution paths. | [OpenClaw Chat Agent Workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench) |
 | Applied full-stack AI workflow | Role-based workflow UI, async inference review, backend service integration, and release/demo material organization. | [Medical AI Assistant Platform](https://github.com/visenz0122/medical-ai-assistant-platform) |
 | Agent-assisted QA tooling | Turning vague test requests into specs, browser evidence, Playwright checks, and reviewable reports. | [spec-test.skill](https://github.com/visenz0122/spec-test.skill) |
+| Earlier Agent workbench | Streaming Agent UI, tool-call visibility, memory/RAG, safety checks, and observable execution paths. | [OpenClaw Chat Agent Workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench) |
 
 ## Main Case Study Now
 
@@ -59,25 +59,6 @@ The projects below are organized by what I am practicing now: AI video productio
   <tr>
     <td width="50%" valign="top">
       <h3>
-        <a href="https://github.com/visenz0122/openclaw-chat-agent-workbench">OpenClaw Chat Agent Workbench</a>
-      </h3>
-      <p>
-        <strong>Personal AI Agent workbench.</strong> I built this as a local-first system for streaming chat, tool orchestration, structured memory, safety checks, and observable Agent execution.
-      </p>
-      <p><strong>What it demonstrates</strong></p>
-      <ul>
-        <li>Next.js workspace for chat, session switching, runtime config, file editing, and event inspection.</li>
-        <li>FastAPI SSE path from user message to LangChain/LangGraph Agent execution.</li>
-        <li>Memory v1/v2 with JSON sessions, Chroma/vector search, PostgreSQL + pgvector, BM25, and hybrid retrieval.</li>
-        <li>Guardian middleware and optional Langfuse tracing for safer, inspectable Agent behavior.</li>
-      </ul>
-      <p>
-        <code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>FastAPI</code>
-        <code>LangGraph</code> <code>LangChain</code> <code>PostgreSQL</code> <code>pgvector</code>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>
         <a href="https://github.com/visenz0122/medical-ai-assistant-platform">Medical AI Assistant Platform</a>
       </h3>
       <p>
@@ -93,6 +74,25 @@ The projects below are organized by what I am practicing now: AI video productio
       <p>
         <code>Vue 3</code> <code>TypeScript</code> <code>Spring Boot</code> <code>FastAPI</code>
         <code>PostgreSQL</code> <code>LangGraph</code> <code>Docker</code> <code>Playwright</code>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>
+        <a href="https://github.com/visenz0122/openclaw-chat-agent-workbench">OpenClaw Chat Agent Workbench</a>
+      </h3>
+      <p>
+        <strong>Earlier personal AI Agent workbench.</strong> I built this as a local-first system for streaming chat, tool orchestration, structured memory, safety checks, and observable Agent execution.
+      </p>
+      <p><strong>What it demonstrates</strong></p>
+      <ul>
+        <li>Next.js workspace for chat, session switching, runtime config, file editing, and event inspection.</li>
+        <li>FastAPI SSE path from user message to LangChain/LangGraph Agent execution.</li>
+        <li>Memory v1/v2 with JSON sessions, Chroma/vector search, PostgreSQL + pgvector, BM25, and hybrid retrieval.</li>
+        <li>Guardian middleware and optional Langfuse tracing for safer, inspectable Agent behavior.</li>
+      </ul>
+      <p>
+        <code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>FastAPI</code>
+        <code>LangGraph</code> <code>LangChain</code> <code>PostgreSQL</code> <code>pgvector</code>
       </p>
     </td>
   </tr>
