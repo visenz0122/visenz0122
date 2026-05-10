@@ -1,26 +1,59 @@
 <div align="center">
 
-<img src="./assets/portfolio-banner.svg" alt="visenz0122 - AI application engineering and Codex tooling profile" width="100%" />
+<img src="./assets/portfolio-banner.svg" alt="visenz0122 - AI application engineering portfolio" width="100%" />
 
 <br />
 
 <a href="https://github.com/visenz0122">GitHub</a> ·
 <a href="mailto:wxzhang0122@gmail.com">wxzhang0122@gmail.com</a> ·
-Shanghai · AI application engineering · Codex tooling
+Shanghai · AI application engineering · Agent workflows · Codex tooling
 
 </div>
 
-## Portfolio Map
+## What I Am Building Toward
 
-I focus on **AI application engineering** with a frontend-first full-stack base. The projects below are organized by what they prove, not by raw activity numbers.
+I am learning to build AI applications as real engineering systems, not just demos. My current direction is **AI product engineering with Agent workflows**: frontend interaction surfaces, long-running generation tasks, provider adapters, runtime visibility, and delivery habits that make a project easier to test, explain, and maintain.
 
-| Lane | Public artifact | Engineering signal |
+The projects below are organized by what I am practicing now: AI video production systems, agentic workbenches, full-stack AI workflows, and reusable QA/tooling.
+
+## Current Focus
+
+| Area | What I am studying and making | Public artifact |
 | --- | --- | --- |
-| Agent workbench | [OpenClaw Chat Agent Workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench) | Streaming Agent UI, tool-call visibility, memory retrieval, safety middleware, traceable runtime behavior. |
-| Applied AI workflow | [Medical AI Assistant Platform](https://github.com/visenz0122/medical-ai-assistant-platform) | Role-based Vue workflows, async inference state, Spring Boot/FastAPI integration, PostgreSQL-backed records. |
-| Developer tooling | [spec-test.skill](https://github.com/visenz0122/spec-test.skill) | Skill design, specification-based testing, browser/Playwright evidence, reusable QA workflow templates. |
+| AI video production systems | Edit-first generation flow, storyboard-to-video workflow, async task states, worker/runtime boundaries, and AI provider integration. | [waoowaoo Personal Fork](https://github.com/visenz0122/waoowaoo) |
+| Agent application engineering | Streaming Agent UI, tool-call visibility, memory/RAG, safety checks, and observable execution paths. | [OpenClaw Chat Agent Workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench) |
+| Applied full-stack AI workflow | Role-based workflow UI, async inference review, backend service integration, and release/demo material organization. | [Medical AI Assistant Platform](https://github.com/visenz0122/medical-ai-assistant-platform) |
+| Agent-assisted QA tooling | Turning vague test requests into specs, browser evidence, Playwright checks, and reviewable reports. | [spec-test.skill](https://github.com/visenz0122/spec-test.skill) |
 
-## Main Case Studies
+## Main Case Study Now
+
+<table>
+  <tr>
+    <td width="100%" valign="top">
+      <h3>
+        <a href="https://github.com/visenz0122/waoowaoo">waoowaoo Personal Fork - AI Video Production Engineering</a>
+      </h3>
+      <p>
+        <strong>Internship / open-source fork project.</strong> This is my current AI application engineering case study, based on the open-source <a href="https://github.com/waooAI/waoowaoo">waooAI/waoowaoo</a> project. I use my fork to record practical work around AI video generation, Agent workflows, task reliability, and full-stack product delivery.
+      </p>
+      <p><strong>What I am practicing</strong></p>
+      <ul>
+        <li>Edit-first video generation flow and timeline-oriented creation UX.</li>
+        <li>Agent prompt workflow refinement for storyboard, director style, and video generation context.</li>
+        <li>Async task lifecycle: submit, poll, worker execution, status events, failure visibility, and frontend refresh.</li>
+        <li>Provider-adapter thinking for image/video/voice generation without hiding runtime failures.</li>
+        <li>Honest fork positioning: attribution, non-commercial license awareness, and clear separation from the official upstream project.</li>
+      </ul>
+      <p>
+        <code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>Prisma</code>
+        <code>MySQL</code> <code>Redis</code> <code>BullMQ</code> <code>AI Provider Adapters</code>
+        <code>Agent Workflow</code>
+      </p>
+    </td>
+  </tr>
+</table>
+
+## Earlier Case Studies
 
 <table>
   <tr>
@@ -48,7 +81,7 @@ I focus on **AI application engineering** with a frontend-first full-stack base.
         <a href="https://github.com/visenz0122/medical-ai-assistant-platform">Medical AI Assistant Platform</a>
       </h3>
       <p>
-        <strong>Course/team full-stack AI workflow project.</strong> The public positioning is intentionally honest: my strongest angle is frontend-heavy integration and AI application delivery.
+        <strong>Course/team full-stack AI workflow project.</strong> This project helped me practice frontend-heavy AI workflow integration and honest delivery documentation.
       </p>
       <p><strong>What it demonstrates</strong></p>
       <ul>
@@ -82,18 +115,20 @@ I focus on **AI application engineering** with a frontend-first full-stack base.
 
 | Signal | Evidence across the projects |
 | --- | --- |
-| Product-grade AI frontend | Streaming chat surfaces, long-running task states, role workflows, editor panels, result review, and event feedback. |
-| Agent integration | SSE contracts, tool-call rendering, memory/RAG injection, LangGraph runtime control, Guardian checks, and tracing. |
-| Full-stack coordination | REST/SSE APIs, FastAPI services, Spring Boot business logic, PostgreSQL records, Docker/local startup paths. |
+| Product-grade AI frontend | Streaming chat surfaces, long-running generation states, role workflows, editor panels, result review, and event feedback. |
+| Agent integration | SSE contracts, tool-call rendering, memory/RAG injection, LangGraph runtime control, prompt workflow design, and safety checks. |
+| Async system thinking | Task submission, worker execution, provider adapters, polling/SSE feedback, failure states, and recovery-oriented UI. |
+| Full-stack coordination | REST/SSE APIs, FastAPI services, Spring Boot business logic, PostgreSQL/MySQL records, Redis queues, Docker/local startup paths. |
 | Testing and delivery | Specification-based testing, browser evidence, Playwright thinking, acceptance docs, and honest public wording. |
 
-## Stack
+## Stack I Can Discuss From Real Project Work
 
-| Layer | Tools I can discuss from real project work |
+| Layer | Tools and concepts |
 | --- | --- |
-| Frontend surfaces | TypeScript, React, Next.js, Vue 3, Tailwind CSS, Element Plus, Monaco-style editor/workspace patterns. |
-| Agent / AI application | LangGraph, LangChain, SSE streaming, tool calls, memory retrieval, RAG, safety middleware, Langfuse-style tracing. |
-| Backend / data | FastAPI, Spring Boot, PostgreSQL, pgvector, Chroma, Docker Compose, auth/RBAC integration. |
+| Frontend product surfaces | TypeScript, React, Next.js, Vue 3, Tailwind CSS, Element Plus, editor/workspace UI patterns. |
+| Agent / AI application | LangGraph, LangChain, Agent workflow design, SSE streaming, tool calls, memory retrieval, RAG, prompt/context shaping. |
+| AI generation runtime | Provider adapters, async queues, worker processes, task events, image/video/voice generation workflow boundaries. |
+| Backend / data | FastAPI, Spring Boot, Prisma, PostgreSQL, MySQL, pgvector, Chroma, Redis, Docker Compose, auth/RBAC integration. |
 | QA / developer tools | Skill authoring, specification-based testing, browser automation, Playwright, screenshot evidence, test report templates. |
 
 <details>
