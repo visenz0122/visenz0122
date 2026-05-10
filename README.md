@@ -20,7 +20,7 @@ The projects below are organized by what I am practicing now: AI video productio
 
 | Area | What I am studying and making | Public artifact |
 | --- | --- | --- |
-| AI video production systems | Edit-first generation flow, storyboard-to-video workflow, async task states, worker/runtime boundaries, and AI provider integration. | [waoowaoo Personal Fork](https://github.com/visenz0122/waoowaoo) |
+| AI video production systems | Personal fork work around edit-first generation, storyboard-to-video workflow, async task states, worker/runtime boundaries, and AI provider integration. | [waoowaoo Personal Fork](https://github.com/visenz0122/waoowaoo) |
 | Applied full-stack AI workflow | Role-based workflow UI, async inference review, backend service integration, and release/demo material organization. | [Medical AI Assistant Platform](https://github.com/visenz0122/medical-ai-assistant-platform) |
 | Agent-assisted QA tooling | Turning vague test requests into specs, browser evidence, Playwright checks, and reviewable reports. | [spec-test.skill](https://github.com/visenz0122/spec-test.skill) |
 | Earlier Agent workbench | Streaming Agent UI, tool-call visibility, memory/RAG, safety checks, and observable execution paths. | [OpenClaw Chat Agent Workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench) |
@@ -34,7 +34,7 @@ The projects below are organized by what I am practicing now: AI video productio
         <a href="https://github.com/visenz0122/waoowaoo">waoowaoo Personal Fork - AI Video Production Engineering</a>
       </h3>
       <p>
-        <strong>Internship / open-source fork project.</strong> This is my current AI application engineering case study, based on the open-source <a href="https://github.com/waooAI/waoowaoo">waooAI/waoowaoo</a> project. I use my fork to record practical work around AI video generation, Agent workflows, task reliability, and full-stack product delivery.
+        <strong>Personal fork / portfolio project.</strong> This is my current AI video production engineering case study. I use this fork as my working surface for edit-first generation, Agent-driven creation, task runtime reliability, provider adapters, and full-stack product delivery.
       </p>
       <p><strong>What I am practicing</strong></p>
       <ul>
@@ -42,7 +42,7 @@ The projects below are organized by what I am practicing now: AI video productio
         <li>Agent prompt workflow refinement for storyboard, director style, and video generation context.</li>
         <li>Async task lifecycle: submit, poll, worker execution, status events, failure visibility, and frontend refresh.</li>
         <li>Provider-adapter thinking for image/video/voice generation without hiding runtime failures.</li>
-        <li>Honest fork positioning: attribution, non-commercial license awareness, and clear separation from the official upstream project.</li>
+        <li>Portfolio-ready documentation that keeps the required source/license notice while focusing on my own engineering practice.</li>
       </ul>
       <p>
         <code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>Prisma</code>
