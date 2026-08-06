@@ -1,146 +1,77 @@
 <div align="center">
 
-<img src="./assets/portfolio-banner.svg" alt="visenz0122 - AI application engineering portfolio" width="100%" />
+<img src="./assets/portfolio-banner.svg" alt="Wenxuan Zhang — AI Agent and AI Application Engineering" width="100%" />
 
-<br />
+### AI Agent 开发 / 大模型应用开发
 
-<a href="https://github.com/visenz0122">GitHub</a> ·
-<a href="mailto:wxzhang0122@gmail.com">wxzhang0122@gmail.com</a> ·
-Shanghai · AI application engineering · Agent workflows · Codex tooling
+华东师范大学软件工程 · 2027 届 · 上海
+
+[ChatECNU](https://chat.ecnu.edu.cn/) · [Email](mailto:wxzhang0122@gmail.com) · [Open-source Work](https://github.com/Vinsenz0122?tab=repositories)
 
 </div>
 
-## What I Am Building Toward
+> 我关注的不只是让模型“能回答”，而是把 **Agent 编排、工具与知识、长任务运行时、业务一致性** 组合成可以上线、恢复和评测的 AI 应用。
 
-I am learning to build AI applications as real engineering systems, not just demos. My current direction is **AI product engineering with Agent workflows**: frontend interaction surfaces, long-running generation tasks, provider adapters, runtime visibility, and delivery habits that make a project easier to test, explain, and maintain.
+## 能力地图
 
-The projects below are organized by what I am practicing now: AI video production systems, agentic workbenches, full-stack AI workflows, and reusable QA/tooling.
-
-## Current Focus
-
-| Area | What I am studying and making | Public artifact |
+| 能力方向 | 我解决的问题 | 项目中的实现 |
 | --- | --- | --- |
-| AI video production systems | Personal fork work around edit-first generation, storyboard-to-video workflow, async task states, worker/runtime boundaries, and AI provider integration. | [waoowaoo Personal Fork](https://github.com/visenz0122/waoowaoo) |
-| Applied full-stack AI workflow | Role-based workflow UI, async inference review, backend service integration, and release/demo material organization. | [Medical AI Assistant Platform](https://github.com/visenz0122/medical-ai-assistant-platform) |
-| Agent-assisted QA tooling | Turning vague test requests into specs, browser evidence, Playwright checks, and reviewable reports. | [spec-test.skill](https://github.com/visenz0122/spec-test.skill) |
-| Earlier Agent workbench | Streaming Agent UI, tool-call visibility, memory/RAG, safety checks, and observable execution paths. | [OpenClaw Chat Agent Workbench](https://github.com/visenz0122/openclaw-chat-agent-workbench) |
+| **Multi-Agent 编排** | 多个 Agent 如何拆解任务、共享事实并在部分失败后继续推进 | 以共享 Blackboard 承载结构化任务状态，通过 Schema 契约、DAG 依赖与批量委派协调子 Agent；对长对话采用窗口保留、语义摘要与关键状态固化的分层压缩策略 |
+| **MCP / RAG / 工具治理** | 如何让 Agent 找到正确工具和知识，同时控制权限与副作用 | 动态筛选 MCP 工具、敏感操作人工确认与单次授权；建设多模态 Notebook，完成异步索引、Dense Retrieval、Rerank、作用域隔离与可追溯引用 |
+| **长任务可靠运行** | 模型进程崩溃、连接中断或写操作结果不明时，任务如何恢复 | 将会话、运行、研究节点、Checkpoint 与 Artifact 持久化；以执行声明、连接代次、结果对账和副作用不重放处理不确定状态，并通过故障注入验证恢复路径 |
+| **AI 应用工程化** | 多模型接入和真实业务中的额度、幂等、限流与可观测性 | 统一 Provider Registry / Adapter；实现调用幂等、额度预留—结算—释放、账本对账、消息队列、Redis 限流、SSE 与 Trace |
 
-## Main Case Study Now
-
-<table>
-  <tr>
-    <td width="100%" valign="top">
-      <h3>
-        <a href="https://github.com/visenz0122/waoowaoo">waoowaoo Personal Fork - AI Video Production Engineering</a>
-      </h3>
-      <p>
-        <strong>Personal fork / portfolio project.</strong> This is my current AI video production engineering case study. I use this fork as my working surface for edit-first generation, Agent-driven creation, task runtime reliability, provider adapters, and full-stack product delivery.
-      </p>
-      <p><strong>What I am practicing</strong></p>
-      <ul>
-        <li>Edit-first video generation flow and timeline-oriented creation UX.</li>
-        <li>Agent prompt workflow refinement for storyboard, director style, and video generation context.</li>
-        <li>Async task lifecycle: submit, poll, worker execution, status events, failure visibility, and frontend refresh.</li>
-        <li>Provider-adapter thinking for image/video/voice generation without hiding runtime failures.</li>
-        <li>Portfolio-ready documentation that keeps the required source/license notice while focusing on my own engineering practice.</li>
-      </ul>
-      <p>
-        <code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>Prisma</code>
-        <code>MySQL</code> <code>Redis</code> <code>BullMQ</code> <code>AI Provider Adapters</code>
-        <code>Agent Workflow</code>
-      </p>
-    </td>
-  </tr>
-</table>
-
-## Earlier Case Studies
+## 代表项目
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>
-        <a href="https://github.com/visenz0122/medical-ai-assistant-platform">Medical AI Assistant Platform</a>
-      </h3>
-      <p>
-        <strong>Course/team full-stack AI workflow project.</strong> This project helped me practice frontend-heavy AI workflow integration and honest delivery documentation.
-      </p>
-      <p><strong>What it demonstrates</strong></p>
-      <ul>
-        <li>Vue 3 role workflows for doctors, researchers, admins, and Agent-assisted operations.</li>
-        <li>Async pneumonia inference task states, result review, feedback, and failure recovery UI.</li>
-        <li>Integration across Spring Boot business APIs, FastAPI CV inference, FastAPI Agent service, and PostgreSQL.</li>
-        <li>Acceptance docs, demo routes, testing notes, and release-readiness material organization.</li>
-      </ul>
-      <p>
-        <code>Vue 3</code> <code>TypeScript</code> <code>Spring Boot</code> <code>FastAPI</code>
-        <code>PostgreSQL</code> <code>LangGraph</code> <code>Docker</code> <code>Playwright</code>
-      </p>
+      <h3><a href="https://chat.ecnu.edu.cn/">ChatECNU</a></h3>
+      <p><strong>华东师范大学官方智能助手 · 已上线</strong></p>
+      <p>负责 Agent 工具链、多模态 Notebook 与校园业务接入。将 16 个可选 MCP 按任务动态筛选为单轮 0–3 个候选工具，并为敏感写操作加入人工确认、单次授权和断点恢复；Notebook 支持文件、网页、图片、音频入库，以及检索重排、权限隔离和引用回写。</p>
+      <p><code>LangGraph</code> <code>MCP</code> <code>RAG</code> <code>Qdrant</code> <code>Redis</code> <code>SSE</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3>
-        <a href="https://github.com/visenz0122/openclaw-chat-agent-workbench">OpenClaw Chat Agent Workbench</a>
-      </h3>
-      <p>
-        <strong>Earlier personal AI Agent workbench.</strong> I built this as a local-first system for streaming chat, tool orchestration, structured memory, safety checks, and observable Agent execution.
-      </p>
-      <p><strong>What it demonstrates</strong></p>
-      <ul>
-        <li>Next.js workspace for chat, session switching, runtime config, file editing, and event inspection.</li>
-        <li>FastAPI SSE path from user message to LangChain/LangGraph Agent execution.</li>
-        <li>Memory v1/v2 with JSON sessions, Chroma/vector search, PostgreSQL + pgvector, BM25, and hybrid retrieval.</li>
-        <li>Guardian middleware and optional Langfuse tracing for safer, inspectable Agent behavior.</li>
-      </ul>
-      <p>
-        <code>Next.js</code> <code>React</code> <code>TypeScript</code> <code>FastAPI</code>
-        <code>LangGraph</code> <code>LangChain</code> <code>PostgreSQL</code> <code>pgvector</code>
-      </p>
+      <h3><a href="https://github.com/waooAI/waoowaoo">Waoowaoo</a></h3>
+      <p><strong>13K+ Stars 开源 AI 影视项目 · 参与开发</strong></p>
+      <p>围绕多 Agent 协作重构创作流程：主 Agent 拆解并批量委派，子 Agent 通过结构化任务契约和共享状态协作，依赖图控制执行顺序，聚合层处理乱序完成、局部失败与结果回传；同时设计长上下文分层压缩，保留角色、分镜和创作约束。</p>
+      <p><a href="https://github.com/Vinsenz0122/waoowaoo">我的工作分支</a> · <code>Multi-Agent</code> <code>Blackboard</code> <code>DAG</code> <code>Context</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Re-Searching</h3>
+      <p><strong>长期科研 Agent 与可靠运行时 · 实习项目 / 内部</strong></p>
+      <p>面向长历史恢复，将 Codex 对话切片、子 Agent 引用、Evidence 与 State Delta 重建为可追踪 Research Graph；在运行时以持久化执行声明、连接代次和结果对账处理崩溃与未知结果，避免副作用请求被自动重放。</p>
+      <p><code>Agent Runtime</code> <code>History Recovery</code> <code>Checkpoint</code> <code>Evaluation</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>AAC</h3>
+      <p><strong>统一模型能力与应用基础设施 · 实习项目 / 内部</strong></p>
+      <p>通过 Registry 与 Adapter 统一文本、视觉和生成类模型调用，当前代码配置覆盖 51 个模型、35 个已启用公开 ModelScope 模型与 9 类任务；围绕论坛互动和代币消费实现幂等、额度预留—结算—释放、账本审计及异常对账。</p>
+      <p><code>Provider Adapter</code> <code>Model Gateway</code> <code>Idempotency</code> <code>Ledger</code></p>
     </td>
   </tr>
 </table>
 
-## Developer Tooling
+## 可公开验证的作品
 
-### [spec-test.skill](https://github.com/visenz0122/spec-test.skill)
-
-`spec-test.skill` is my public skill project for agent-assisted web testing. It turns vague "test this feature" requests into structured specifications, test cases, execution evidence, and reviewable QA reports.
-
-| Area | What it contains |
+| Repository | 展示的工程能力 |
 | --- | --- |
-| Spec workflow | Cartographer, Inspector, and Operator roles with human review gates. |
-| Test design | Boundary value, equivalence partitioning, decision table, state transition, use case, and Right-BICEP references. |
-| Execution discipline | Playwright plus browser/screenshot evidence for data, workflow, and visual checks. |
-| Reusable artifacts | Chinese and English editions, templates, examples, execution reports, and review checklists. |
+| [ai-capability-service-zhangwenxuan](https://github.com/Vinsenz0122/ai-capability-service-zhangwenxuan) | FastAPI 模型能力网关：Provider 抽象、统一错误协议、request_id、耗时日志、密钥隔离、Pytest 与 CI |
+| [openclaw-chat-agent-workbench](https://github.com/Vinsenz0122/openclaw-chat-agent-workbench) | 本地优先的 Agent 工作台：LangGraph 工具循环、SSE、Memory / RAG、安全中间件和 Langfuse Trace |
+| [codex-web-test-skill](https://github.com/Vinsenz0122/codex-web-test-skill) | 面向 Codex 的 Web 测试工作流：需求建模、浏览器证据、Playwright 检查与可复核报告 |
+| [medical-ai-assistant-platform](https://github.com/Vinsenz0122/medical-ai-assistant-platform) | Vue + Spring Boot + FastAPI 的异步 AI 业务流程、角色工作台与结果审核界面 |
 
-## Engineering Signals
+## 技术与工程习惯
 
-| Signal | Evidence across the projects |
-| --- | --- |
-| Product-grade AI frontend | Streaming chat surfaces, long-running generation states, role workflows, editor panels, result review, and event feedback. |
-| Agent integration | SSE contracts, tool-call rendering, memory/RAG injection, LangGraph runtime control, prompt workflow design, and safety checks. |
-| Async system thinking | Task submission, worker execution, provider adapters, polling/SSE feedback, failure states, and recovery-oriented UI. |
-| Full-stack coordination | REST/SSE APIs, FastAPI services, Spring Boot business logic, PostgreSQL/MySQL records, Redis queues, Docker/local startup paths. |
-| Testing and delivery | Specification-based testing, browser evidence, Playwright thinking, acceptance docs, and honest public wording. |
+- **Agent / AI：**LangGraph、Multi-Agent、MCP、Tool Calling、RAG、Memory、Agent Eval
+- **Backend：**Python / FastAPI、Java / Spring Boot、Redis、消息队列、关系型数据库、Docker
+- **Frontend：**TypeScript、React / Next.js、Vue；能够独立完成流式交互、任务工作台和管理端
+- **Delivery：**熟练使用 Codex、Claude Code；重视结构化日志、Trace、自动化测试、故障恢复与可验证交付
 
-## Stack I Can Discuss From Real Project Work
+## 当前方向
 
-| Layer | Tools and concepts |
-| --- | --- |
-| Frontend product surfaces | TypeScript, React, Next.js, Vue 3, Tailwind CSS, Element Plus, editor/workspace UI patterns. |
-| Agent / AI application | LangGraph, LangChain, Agent workflow design, SSE streaming, tool calls, memory retrieval, RAG, prompt/context shaping. |
-| AI generation runtime | Provider adapters, async queues, worker processes, task events, image/video/voice generation workflow boundaries. |
-| Backend / data | FastAPI, Spring Boot, Prisma, PostgreSQL, MySQL, pgvector, Chroma, Redis, Docker Compose, auth/RBAC integration. |
-| QA / developer tools | Skill authoring, specification-based testing, browser automation, Playwright, screenshot evidence, test report templates. |
+寻找 **上海 · 2027 校招** 的 AI Agent 开发、大模型应用开发或 AI 全栈岗位。欢迎通过 [wxzhang0122@gmail.com](mailto:wxzhang0122@gmail.com) 联系我。
 
-<details>
-<summary>Open source systems I study</summary>
-
-| System | Why it matters to my direction |
-| --- | --- |
-| [LangGraph](https://github.com/langchain-ai/langgraph) | Stateful Agent workflows and controllable execution graphs. |
-| [Dify](https://github.com/langgenius/dify) | Production-style LLM workflow and application platform design. |
-| [OpenHands](https://github.com/OpenHands/OpenHands) | Developer-agent UX and software engineering Agent patterns. |
-| [browser-use](https://github.com/browser-use/browser-use) | Browser automation as an Agent capability. |
-| [Vercel AI SDK](https://github.com/vercel/ai) | TypeScript-first streaming AI application patterns. |
-| [Langfuse](https://github.com/langfuse/langfuse) | LLM tracing, prompt observability, and evaluation workflows. |
-
-</details>
+<sub>说明：公开项目均提供仓库或线上入口；内部项目只展示可公开讨论的架构与已核验数据，评测方案不作为尚未实测的结果呈现。</sub>
