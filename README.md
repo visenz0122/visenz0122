@@ -1,74 +1,69 @@
-<div align="center">
+# 张文轩 / Wenxuan Zhang
 
-<img src="./assets/portfolio-banner.svg" alt="Wenxuan Zhang — AI Agent and AI Application Engineering" width="100%" />
-
-### AI Agent 开发 / 大模型应用开发
-
+**AI Agent 开发 · AI 全栈开发**<br>
 华东师范大学软件工程 · 2027 届 · 上海
 
-[ChatECNU](https://chat.ecnu.edu.cn/) · [Email](mailto:wxzhang0122@gmail.com) · [Open-source Work](https://github.com/Vinsenz0122?tab=repositories)
+**2 段 AI 应用研发实习 · 学校官方 Agent 已上线 · 13K+ Stars 开源项目参与**
 
-</div>
+[线上产品](https://chat.ecnu.edu.cn/) · [代表项目](#代表项目) · [技术与工作方式](#技术栈与-ai-原生研发) · [Agent 工程笔记](https://github.com/Vinsenz0122/agent-engineering-notes) · [Email](mailto:wxzhang0122@gmail.com)
 
-> 我关注的不只是让模型“能回答”，而是把 **Agent 编排、工具与知识、长任务运行时、业务一致性** 组合成可以上线、恢复和评测的 AI 应用。
+## 技术栈与 AI 原生研发
 
-## 能力地图
+- **应用开发：**Python / FastAPI、TypeScript / React、Java / Spring Boot；围绕 Agent 服务、流式交互、任务工作台与业务后端完成端到端交付。
+- **AI Coding：**高频使用 Codex、Claude Code 与 OpenCode，将代码库理解、规格与计划、跨模块实现、自动化测试、代码评审和故障回溯组织为可复用研发流程，并通过 `AGENTS.md`、Skills 与验收清单固化项目约束。
+- **Design-to-Code：**使用 Figma Make、v0 与 Stitch 进行界面探索和交互原型，将视觉规范、组件约束与交互状态沉淀为 `design.md`，再进入可测试的前端实现。
 
-| 能力方向 | 我解决的问题 | 项目中的实现 |
-| --- | --- | --- |
-| **Multi-Agent 编排** | 多个 Agent 如何拆解任务、共享事实并在部分失败后继续推进 | 以共享 Blackboard 承载结构化任务状态，通过 Schema 契约、DAG 依赖与批量委派协调子 Agent；对长对话采用窗口保留、语义摘要与关键状态固化的分层压缩策略 |
-| **MCP / RAG / 工具治理** | 如何让 Agent 找到正确工具和知识，同时控制权限与副作用 | 动态筛选 MCP 工具、敏感操作人工确认与单次授权；建设多模态 Notebook，完成异步索引、Dense Retrieval、Rerank、作用域隔离与可追溯引用 |
-| **长任务可靠运行** | 模型进程崩溃、连接中断或写操作结果不明时，任务如何恢复 | 将会话、运行、研究节点、Checkpoint 与 Artifact 持久化；以执行声明、连接代次、结果对账和副作用不重放处理不确定状态，并通过故障注入验证恢复路径 |
-| **AI 应用工程化** | 多模型接入和真实业务中的额度、幂等、限流与可观测性 | 统一 Provider Registry / Adapter；实现调用幂等、额度预留—结算—释放、账本对账、消息队列、Redis 限流、SSE 与 Trace |
+## 当前经历
+
+- **2026.05 – 至今｜上海联续边界有限公司｜AI Agent / AI 应用开发实习生**<br>
+  负责 Re-Searching 长期科研 Agent 与 AAC 多模型 AI 应用基础设施。
+- **2026.02 – 2026.05｜上海哈沐科技有限公司｜AI Agent 开发实习生**<br>
+  参与 Waoowaoo 开源 AI 影视项目，重点负责 Multi-Agent 编排、上下文管理与任务恢复。
 
 ## 代表项目
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://chat.ecnu.edu.cn/">ChatECNU</a></h3>
-      <p><strong>华东师范大学官方智能助手 · 已上线</strong></p>
-      <p>负责 Agent 工具链、多模态 Notebook 与校园业务接入。将 16 个可选 MCP 按任务动态筛选为单轮 0–3 个候选工具，并为敏感写操作加入人工确认、单次授权和断点恢复；Notebook 支持文件、网页、图片、音频入库，以及检索重排、权限隔离和引用回写。</p>
-      <p><code>LangGraph</code> <code>MCP</code> <code>RAG</code> <code>Qdrant</code> <code>Redis</code> <code>SSE</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/waooAI/waoowaoo">Waoowaoo</a></h3>
-      <p><strong>13K+ Stars 开源 AI 影视项目 · 参与开发</strong></p>
-      <p>围绕多 Agent 协作重构创作流程：主 Agent 拆解并批量委派，子 Agent 通过结构化任务契约和共享状态协作，依赖图控制执行顺序，聚合层处理乱序完成、局部失败与结果回传；同时设计长上下文分层压缩，保留角色、分镜和创作约束。</p>
-      <p><a href="https://github.com/Vinsenz0122/waoowaoo">我的工作分支</a> · <code>Multi-Agent</code> <code>Blackboard</code> <code>DAG</code> <code>Context</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Re-Searching</h3>
-      <p><strong>长期科研 Agent 与可靠运行时 · 实习项目 / 内部</strong></p>
-      <p>面向长历史恢复，将 Codex 对话切片、子 Agent 引用、Evidence 与 State Delta 重建为可追踪 Research Graph；在运行时以持久化执行声明、连接代次和结果对账处理崩溃与未知结果，避免副作用请求被自动重放。</p>
-      <p><code>Agent Runtime</code> <code>History Recovery</code> <code>Checkpoint</code> <code>Evaluation</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>AAC</h3>
-      <p><strong>统一模型能力与应用基础设施 · 实习项目 / 内部</strong></p>
-      <p>通过 Registry 与 Adapter 统一文本、视觉和生成类模型调用，当前代码配置覆盖 51 个模型、35 个已启用公开 ModelScope 模型与 9 类任务；围绕论坛互动和代币消费实现幂等、额度预留—结算—释放、账本审计及异常对账。</p>
-      <p><code>Provider Adapter</code> <code>Model Gateway</code> <code>Idempotency</code> <code>Ledger</code></p>
-    </td>
-  </tr>
-</table>
+### [ChatECNU](https://chat.ecnu.edu.cn/)｜华东师范大学官方智能助手
 
-## 可公开验证的作品
+**已上线 · 核心开发｜Agent 工具治理、多模态 Notebook、校园业务 MCP**
 
-| Repository | 展示的工程能力 |
-| --- | --- |
-| [ai-capability-service-zhangwenxuan](https://github.com/Vinsenz0122/ai-capability-service-zhangwenxuan) | FastAPI 模型能力网关：Provider 抽象、统一错误协议、request_id、耗时日志、密钥隔离、Pytest 与 CI |
-| [openclaw-chat-agent-workbench](https://github.com/Vinsenz0122/openclaw-chat-agent-workbench) | 本地优先的 Agent 工作台：LangGraph 工具循环、SSE、Memory / RAG、安全中间件和 Langfuse Trace |
-| [codex-web-test-skill](https://github.com/Vinsenz0122/codex-web-test-skill) | 面向 Codex 的 Web 测试工作流：需求建模、浏览器证据、Playwright 检查与可复核报告 |
-| [medical-ai-assistant-platform](https://github.com/Vinsenz0122/medical-ai-assistant-platform) | Vue + Spring Boot + FastAPI 的异步 AI 业务流程、角色工作台与结果审核界面 |
+- **生产问题：**系统既要回答校园知识问题，又要进入会议预约、班车预约和课题发布等真实业务；知识权限、工具范围与写操作副作用必须同时受控。
+- **我的设计：**由服务端根据意图收敛本轮可见工具，避免把全部 MCP 能力直接交给模型；查询可自动执行，办理类写操作经过人工确认、一次性授权、业务校验与断点恢复。Notebook 侧完成文件、网页、图片和音频的异步入库、检索重排、权限隔离与引用回写。
+- **结果与边界：**系统已接入学校官网并持续使用，三套校园应用已接入学校微服务系统并供 ChatECNU “查办一体”使用；RAG 已建立覆盖召回、排序、引用和拒答的离线评测方案，未实测指标不写作效果提升。
 
-## 技术与工程习惯
+### [Waoowaoo](https://github.com/waooAI/waoowaoo)｜开源 AI 影视生产平台
 
-- **Agent / AI：**LangGraph、Multi-Agent、MCP、Tool Calling、RAG、Memory、Agent Eval
-- **Backend：**Python / FastAPI、Java / Spring Boot、Redis、消息队列、关系型数据库、Docker
-- **Frontend：**TypeScript、React / Next.js、Vue；能够独立完成流式交互、任务工作台和管理端
-- **Delivery：**熟练使用 Codex、Claude Code；重视结构化日志、Trace、自动化测试、故障恢复与可验证交付
+**上游 13K+ Stars · 参与开发｜Multi-Agent 编排、结构化通信、长上下文管理**
+
+- **生产问题：**剧本、摄影、提示词、生成与质检不是一次对话，而是具有产物依赖、并行执行、局部返工和长周期约束的任务网络。
+- **我的设计：**以中心任务图管理拆解、依赖和调度，子 Agent 只接收当前任务所需的冻结上下文，通过共享状态交接结构化产物、执行状态与失败原因；调度层统一汇聚乱序完成和部分失败，再决定继续、补充信息或局部重跑。
+- **上下文策略：**将稳定创作事实、近期原始对话与历史摘要分层保存；压缩只替换可重建的旧历史，不覆盖人物、场景、分镜和产物依赖，使 Agent 切换与长任务恢复后仍保持一致。
+- **公开证据：**[上游项目](https://github.com/waooAI/waoowaoo) · [个人 Fork](https://github.com/Vinsenz0122/waoowaoo)
+
+### Re-Searching｜基于 Codex 的长期科研 Agent
+
+**实习项目 / 内部｜历史恢复算法、Agent 控制面、故障注入评测**
+
+- **生产问题：**系统复用 Codex 的推理与工具能力后，真正困难的是如何把跨会话、跨子 Agent 的长历史恢复为可信研究状态，以及如何处理进程崩溃、连接中断和外部写操作结果不明。
+- **我的设计：**先按轮次和长度切分历史，只展开被当前任务引用的子 Agent 记录，再让模型输出带证据的状态变化；产品侧校验并重建研究节点、产物依赖、开放问题和阻塞关系，而不是把聊天摘要直接当作事实源。
+- **可靠运行：**以统一 Session、持久化 Run / Research Node 和不可变快照管理任务；通过执行权声明、连接代际与结果对账区分“可安全重试”和“可能已产生副作用”，对结果不明的写操作禁止自动重放。
+- **验证方式：**分别评测事实恢复、关系恢复、信息缺口与压缩损失，并用并发、断线、崩溃和重复请求用例验证恢复边界。
+
+### [AAC](https://github.com/Vinsenz0122/ai-capability-service-zhangwenxuan)｜多模型 AI 应用与社区平台
+
+**实习项目 / 内部｜模型能力网关、业务事务一致性、AI 产品全栈**
+
+- **生产问题：**多模型产品不能把不同 Provider 的协议差异扩散到业务层；点赞、投票、生成和发布同时涉及并发更新、额度预留、失败补偿与结果对账。
+- **我的设计：**用 Provider Registry 与 Adapter 统一文本、视觉、文生图和流式调用，当前代码接入 ModelScope / Gradio 与 OpenRouter / OpenAI-compatible 两类 Provider，共配置 16 个模型、覆盖 7 类任务能力；把一次付费生成建模为“额度预留—模型执行—结算 / 释放”，通过幂等键、账本与对账处理重复请求和结果不明。
+- **公开证据：**将内部边界抽取为可运行的最小模型网关，保留 Provider 抽象、稳定错误协议、请求追踪、密钥隔离、自动化测试与 CI，便于直接审查实现质量。
+
+## [AI 工程知识库](https://github.com/Vinsenz0122/agent-engineering-notes)
+
+使用 Obsidian 将论文、源码阅读、项目决策、评测方法和故障案例组织为持续维护的双向链接知识库，当前重点覆盖：
+
+- **Agent Systems：**Multi-Agent 编排、工具治理、状态与上下文管理、长期任务恢复。
+- **Retrieval & Evaluation：**多模态 RAG、检索与重排、引用与拒答、离线评测集设计。
+- **Reliability：**幂等与副作用边界、失败重试与降级、断线恢复、Trace 与故障注入。
+- **AI-native Engineering：**需求与约束沉淀、并行 Agent 协作、代码评审、自动化验收与知识回流。
 
 ## 当前方向
 
